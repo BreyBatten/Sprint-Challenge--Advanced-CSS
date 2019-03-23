@@ -14,6 +14,7 @@
 
     img {
       width: 100%;
+      border-radius: 5px;
     }
   
   }
@@ -22,12 +23,24 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -51,7 +64,6 @@
     justify-content: center;
     @media @phone {
       width: 90%;
-      padding: 10px;
       display: flex;
       margin: 0 auto;
       flex-flow: column-reverse;
@@ -60,6 +72,9 @@
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 150%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -72,17 +87,26 @@
       .btn {
         .button;
         .center;
+        @media @phone {
+          width: 100%;
+          .center;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width: 150%;
+        .center;
+        margin-bottom: 10px;
+        }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
       }
     }
   }
