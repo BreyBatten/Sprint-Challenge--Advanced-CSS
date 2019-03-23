@@ -11,6 +11,10 @@
     p {
       padding:0 15px;
     }
+
+    img {
+      width: 100%;
+    }
   
   }
 
@@ -45,6 +49,14 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      width: 90%;
+      padding: 10px;
+      display: flex;
+      margin: 0 auto;
+      flex-flow: column-reverse;
+      .center;
+    }
 
     .walk-text {
       width: 50%;
