@@ -1,1 +1,25 @@
 // Mixins Here
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button(@width: 90px; @height: 35px; @radius: 5px;) {
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    background-color: @ebony-clay;
+    color: white;
+    font-size: 1.8rem;
+    &:hover {
+        background-color: white;
+        color: @ebony-clay;
+        border: 1px solid @ebony-clay;
+    }
+}
+
+.phone {
+    width: 150%;
+    margin: 0 auto;
+}
